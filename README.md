@@ -14,7 +14,7 @@ ciclo-aberto/
 ├── cadastro.html
 ├── css/estilo.css
 ├── js/mascaras.js
-└── img/   (JPG, WebP, PNG e SVG)
+└── img/(JPG, WebP, PNG e SVG)
 ```
 
 ## Recursos aplicados
