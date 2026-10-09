@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos sociais | Ciclo Aberto</title>
+  <meta name="description" content="Conheça os projetos ambientais do Ciclo Aberto, saiba como ser voluntário e como fazer uma doação.">
+  <meta name="keywords" content="ONG, reciclagem, meio ambiente, voluntariado, doações, São Paulo">
+  <meta name="author" content="Equipe Ciclo Aberto">
+  <meta property="og:title" content="Projetos sociais | Ciclo Aberto">
+  <meta property="og:description" content="Conheça os projetos ambientais do Ciclo Aberto, saiba como ser voluntário e como fazer uma doação.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/hero.jpg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34">Ciclo Aberto</a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section aria-labelledby="titulo-projetos">
+      <div class="container">
+        <h1 id="titulo-projetos">Projetos sociais</h1>
+        <p class="lead">Três frentes que se completam: separar, reaproveitar e educar. Todos têm indicadores públicos de resultado.</p>
+        <article class="projeto">
+          <picture>
+            <source srcset="img/projeto-coleta.webp" type="image/webp">
+            <img src="img/projeto-coleta.jpg" alt="Ilustração de três lixeiras de coleta seletiva em fileira" width="800" height="500">
+          </picture>
+          <div>
+            <h2>Coleta Seletiva Comunitária</h2>
+            <p>Pontos de entrega nos bairros e rotas de coleta feitas junto com cooperativas de catadores.</p>
+            <p class="impacto">Impacto: 180 toneladas desviadas de aterros em 2024.</p>
+          </div>
+        </article>
+        <article class="projeto">
+          <picture>
+            <source srcset="img/projeto-reuso.webp" type="image/webp">
+            <img src="img/projeto-reuso.jpg" alt="Ilustração de uma garrafa de vidro com uma planta brotando" width="800" height="500" loading="lazy">
+          </picture>
+          <div>
+            <h2>Oficina de Reuso</h2>
+            <p>Cursos gratuitos de reparo, costura e transformação de materiais descartados em novos produtos.</p>
+            <p class="impacto">Impacto: 60 pessoas formadas por ano.</p>
+          </div>
+        </article>
+        <article class="projeto">
+          <picture>
+            <source srcset="img/projeto-escola.webp" type="image/webp">
+            <img src="img/projeto-escola.jpg" alt="Ilustração de um quadro-negro com símbolo de reciclagem e livros empilhados" width="800" height="500" loading="lazy">
+          </picture>
+          <div>
+            <h2>Escola Lixo Zero</h2>
+            <p>Aulas e atividades práticas sobre consumo consciente em escolas públicas.</p>
+            <p class="impacto">Impacto: 12 escolas e 3.200 estudantes atendidos.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="voluntariado" aria-labelledby="titulo-voluntariado">
+      <div class="container duas-colunas">
+        <div>
+          <h2 id="titulo-voluntariado">Seja voluntário</h2>
+          <p>Você pode doar seu tempo e suas habilidades. Não é preciso experiência: oferecemos uma capacitação inicial.</p>
+          <ul class="lista-simples">
+            <li>Triagem de materiais nos pontos de coleta (3h por semana)</li>
+            <li>Mutirões de limpeza de córregos e praças aos sábados</li>
+            <li>Apoio em oficinas, comunicação e eventos</li>
+          </ul>
+          <p>Ao final de cada ciclo, você recebe certificado de participação.</p>
+          <p><a class="botao" href="cadastro.html">Quero me candidatar</a></p>
+        </div>
+        <figure>
+          <picture>
+            <source srcset="img/voluntarios.webp" type="image/webp">
+            <img src="img/voluntarios.jpg" alt="Ilustração de quatro voluntários lado a lado" width="800" height="500" loading="lazy">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <section id="doar" aria-labelledby="titulo-doar">
+      <div class="container">
+        <h2 id="titulo-doar">Como doar</h2>
+        <p>Toda doação é aplicada nos projetos e a prestação de contas é publicada a cada trimestre.</p>
+        <div class="grade grade--2">
+          <div class="meta">
+            <h3>Campanha: Ecoponto do bairro</h3>
+            <p>Meta de R$ 40.000 para montar um novo ponto de coleta com balança, galpão e equipamentos.</p>
+            <label for="progresso">Arrecadado: R$ 26.000 de R$ 40.000 (65%)</label>
+            <progress id="progresso" value="65" max="100">65%</progress>
+          </div>
+          <div>
+            <h3>Formas de contribuir</h3>
+            <ul class="lista-simples">
+              <li><strong>Pix:</strong> doacoes@cicloaberto.org.br</li>
+              <li><strong>Transferência:</strong> Banco 000, Ag. 1234, C/C 00000-0</li>
+              <li><strong>Doação mensal:</strong> escolha um valor e apoie o ano todo</li>
+            </ul>
+            <a href="cadastro.html">Cadastre-se como apoiador</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Ciclo Aberto</strong> · CNPJ 00.000.000/0000-00</p>
+      <p><a href="#conteudo">Voltar ao topo</a></p>
+    </div>
+  </footer>
+</body>
+</html>

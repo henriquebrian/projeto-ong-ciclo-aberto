@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro | Ciclo Aberto</title>
+  <meta name="description" content="Cadastre-se como voluntário ou apoiador do Ciclo Aberto e participe da nossa rede ambiental.">
+  <meta name="keywords" content="ONG, reciclagem, meio ambiente, voluntariado, doações, São Paulo">
+  <meta name="author" content="Equipe Ciclo Aberto">
+  <meta property="og:title" content="Cadastro | Ciclo Aberto">
+  <meta property="og:description" content="Cadastre-se como voluntário ou apoiador do Ciclo Aberto e participe da nossa rede ambiental.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/hero.jpg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo">
+    <div class="container">
+      <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="34" height="34">Ciclo Aberto</a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section aria-labelledby="titulo-cadastro">
+      <div class="container duas-colunas">
+        <div>
+          <h1 id="titulo-cadastro">Faça parte da rede</h1>
+          <p>Preencha o formulário para ser voluntário ou apoiador. Campos com <span class="obrigatorio" aria-hidden="true">*</span> são obrigatórios.</p>
+          <picture>
+            <source srcset="img/cadastro.webp" type="image/webp">
+            <img src="img/cadastro.jpg" alt="Ilustração do símbolo de reciclagem com três setas azuis" width="800" height="500">
+          </picture>
+        </div>
+        <div>
+          <div id="aviso-sucesso" class="aviso" role="status" tabindex="-1" hidden>
+            <strong>Cadastro recebido!</strong> Obrigado por se juntar ao Ciclo Aberto. Entraremos em contato em breve.
+          </div>
+          <form id="form-cadastro" class="formulario" action="#" method="post">
+            <fieldset>
+              <legend>Dados pessoais</legend>
+              <div class="campo">
+                <label for="nome">Nome completo <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="text" id="nome" name="nome" required minlength="5" maxlength="100" autocomplete="name">
+              </div>
+              <div class="campo">
+                <label for="email">E-mail <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="nome@exemplo.com">
+              </div>
+              <div class="campos-2">
+                <div class="campo">
+                  <label for="cpf">CPF <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="cpf" name="cpf" required inputmode="numeric" data-mascara="cpf" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" title="Digite o CPF no formato 000.000.000-00">
+                </div>
+                <div class="campo">
+                  <label for="telefone">Telefone <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="tel" id="telefone" name="telefone" required data-mascara="telefone" maxlength="15" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(11) 90000-0000" autocomplete="tel" title="Digite o telefone no formato (11) 90000-0000">
+                </div>
+              </div>
+              <div class="campo">
+                <label for="nascimento">Data de nascimento <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="date" id="nascimento" name="nascimento" required min="1900-01-01" max="2026-12-31" autocomplete="bday">
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Endereço</legend>
+              <div class="campos-2">
+                <div class="campo">
+                  <label for="cep">CEP <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="cep" name="cep" required inputmode="numeric" data-mascara="cep" maxlength="9" pattern="\d{5}-\d{3}" placeholder="00000-000" autocomplete="postal-code" title="Digite o CEP no formato 00000-000">
+                </div>
+                <div class="campo">
+                  <label for="cidade">Cidade <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="cidade" name="cidade" required autocomplete="address-level2">
+                </div>
+              </div>
+              <div class="campo">
+                <label for="endereco">Endereço <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <input type="text" id="endereco" name="endereco" required autocomplete="address-line1" placeholder="Rua, número e complemento">
+              </div>
+              <div class="campo">
+                <label for="estado">Estado <span class="obrigatorio" aria-hidden="true">*</span></label>
+                <select id="estado" name="estado" required autocomplete="address-level1">
+              <option value="">Selecione</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Como quer participar?</legend>
+              <div class="opcoes" role="group" aria-label="Perfil de participação">
+                <label><input type="radio" name="perfil" value="voluntario" required> Voluntário</label>
+                <label><input type="radio" name="perfil" value="doador"> Doador / apoiador</label>
+              </div>
+              <div class="campo">
+                <label for="mensagem">Mensagem (opcional)</label>
+                <textarea id="mensagem" name="mensagem" rows="3" maxlength="300"></textarea>
+                <span class="ajuda">Conte um pouco sobre sua disponibilidade ou interesse. Máximo de 300 caracteres.</span>
+              </div>
+              <div class="opcoes">
+                <label><input type="checkbox" name="termos" required> Li e aceito o uso dos meus dados para contato da ONG. <span class="obrigatorio" aria-hidden="true">*</span></label>
+              </div>
+            </fieldset>
+
+            <div class="acoes">
+              <button type="submit" class="botao">Enviar cadastro</button>
+              <button type="reset" class="botao botao--contorno">Limpar campos</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/mascaras.js"></script>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Ciclo Aberto</strong> · CNPJ 00.000.000/0000-00</p>
+      <p><a href="#conteudo">Voltar ao topo</a></p>
+    </div>
+  </footer>
+</body>
+</html>
